@@ -342,3 +342,5 @@ Links:
 * ["AWS Lambda: Programatically create a Python 'Hello World' function" - blog post - by Mark Needham](https://markhneedham.com/blog/2017/04/02/aws-lambda-programatically-create-a-python-hello-world-function/)
 
 * ["Route 53 hosted zone management" - Atomic Object blog post - By Justin Kulesza](https://spin.atomicobject.com/2016/04/28/route-53-hosted-zone-managment/)
+
+* ["Powering Secondary DNS in a VPC using AWS Lambda and Amazon Route 53 Private Hosted Zones" - AWS blog post - By  Bryan Liston](https://aws.amazon.com/blogs/compute/powering-secondary-dns-in-a-vpc-using-aws-lambda-and-amazon-route-53-private-hosted-zones/)
