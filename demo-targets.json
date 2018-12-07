@@ -1,0 +1,5 @@
+[{
+  "Id": "RuleStatementId01",
+  "Arn": "arn:aws:lambda:us-east-1:904129017616:function:HelloWorld",
+  "Input": "{\"Domain\": \"mydomain.com\",\"MasterDns\": \"10.0.0.1\",\"ZoneId\": \"AA11BB22CC33DD\",\"IgnoreTTL\": \"False\",\"ZoneSerial\": \"\"}"
+}]
