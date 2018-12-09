@@ -57,6 +57,12 @@ arn:aws:iam::048251220134:role/demo-role
 
 This is the "role ARN", and you will need it later.
 
+If you want to use the command `jq` to get the ARN:
+
+```sh
+cat output.json | jq -r '.Role.Arn'
+```
+
 
 ## Create a policy
 
@@ -92,6 +98,12 @@ The output ARN will look something like this:
 arn:aws:iam::048251220134:policy/demo-policy
 ```
 This is the "policy ARN", and you will need it later.
+
+If you want to use the command `jq` to get the ARN:
+
+```sh
+cat output.json | jq -r '.Policy.Arn'
+```
 
 
 ## Attach
@@ -145,6 +157,12 @@ The output ARN will look something like this:
 arn:aws:iam::048251220134:function:HelloWorld
 ```
 This is the "function ARN", and you will need it later.
+
+If you want to use the command `jq` to get the ARN:
+
+```sh
+cat output.json | jq -r '.Function.Arn'
+```
 
 
 ## Invoke a function
@@ -204,6 +222,12 @@ arn:aws:iam::048251220134:rule/demo-rule
 
 This is the "rule ARN", and you will need it later.
 
+If you want to use the command `jq` to get the ARN:
+
+```sh
+cat output.json | jq -r '.RuleArn'
+```
+
 
 ### Create permission
 
@@ -225,6 +249,13 @@ Reponse:
   "Statement": "{\"Sid\":\"demo-statement\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"events.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-east-1:904129017616:function:HelloWorld\",\"Condition\":{\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:iam::048251220134:rule/demo-rule\"}}}"
 }
 ```
+
+If you want to use the command `jq` to get the statement id:
+
+```sh
+cat output.json | jq -r '.Statement' | jq -r '.Sid'
+```
+
 
 ## Create a target
 
